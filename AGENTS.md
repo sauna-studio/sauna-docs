@@ -79,3 +79,5 @@ APIキー・秘密鍵・DBパスワードなどの認証情報が必要になっ
 ## Web共通スタック
 
 Bunで依存管理とローカル実行を行う。SvelteKit / Svelte 5 Runes / TypeScript strict / Vite / Tailwind CSS v4 / shadcn-svelte / Lucide Svelte / Superforms + Zod / openapi-fetchを採用。Vitest / Playwright / ESLint / Prettierを実検証する。外部ライブラリは公式を優先し、必要時だけ再現テストと最小差分でforkし、上流PRにつながる形に管理する。
+
+2026-11-01の最新ユーザー指示で、ローカル実装を適宜PR化し、GitHub Codex指摘への返信/再レビューで指摘なし・必須CI成功後にmergeできる。以前のlocal-only制限は更新された。依存catalogは未使用分も含めuser指定を追加し、branch解決commitをlockfileへ固定する。
