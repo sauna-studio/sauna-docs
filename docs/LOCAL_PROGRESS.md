@@ -45,3 +45,5 @@ API Issue9のquery層とIssue10のchallenge基盤を追加。外部から生成/
 PostgreSQL challenge tableと原子的consumeを追加し、CSPRNG nonceとSHA-256のbrowser-flow binding、RP/origin/purpose、DB時刻での期限を管理する。16並行consumeの1成功、row lock待ちで期限超過の拒否を実DB回帰で確認。host Swift38tests、SQL拒否29件、Python26testsが成功。詳細と独立review結果はsauna-api/docs/LOCAL_IDENTITY.md / LOCAL_VALIDATION.mdに記録する。
 
 ローカル仮想認証器鍵/専用token生成はユーザー承認済み。Sauna本体での追加生成はメモリ上のnonceとflow bindingで、Passkey credentialやログインsessionはまだ生成していない。署名/UV・session/Workspace・公開認証API・remote CIは未実装/未検証の範囲として残る。
+
+最終sourceのApple container/Linux release build/testも成功（24成功、secretを渡さないDB14件はskip）。API新imageの再起動後health/versionを実HTTPで確認した。上流WebAuthn評価はbeta1で38、修正済main固定SHAで63tests成功し、互換修正が既に本家にあるため重複forkなし。Sauna依存へは未追加。
