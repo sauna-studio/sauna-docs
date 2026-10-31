@@ -6,3 +6,6 @@
 - [ADR-0004 意匠とOS](https://github.com/sauna-studio/.github/blob/main/docs/adr/0004-design-and-platforms.md)
 
 ADRを変更したPRではこの索引とsauna-docsへの導線も更新する。初期PRのmerge後、ブランチリンクをmainへ更新する。
+
+- [ADR-0006 ローカルApple container](../adr/0006-local-apple-container.md)
+- [ADR-0007 Webスタック](../adr/0007-web-stack.md)

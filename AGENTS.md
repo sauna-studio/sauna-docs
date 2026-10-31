@@ -6,7 +6,7 @@
 
 川沿いの小規模サウナ施設の予約・決済・運営を開発する。初期は1施設でも施設IDと施設単位の認可を設計する。予約・決済・シフトなどの業務データはSauna API / PostgreSQLを正本とし、外部サービスを正本にしない。
 
-API: Swift 6 / Hummingbird / PostgreSQL 18 / PostgresNIO / Atlas / OpenAPI / Swift OpenAPI Generator。Apple: SwiftUI、iOS・iPadOS 27.2以上。Web: SvelteKit / TypeScript。基盤: Terraform / Cloud Run / Cloud SQL / Docker / OpenTelemetry。最新安定版OS・ブラウザを対象とし、不要な後方互換分岐を追加しない。
+API: Swift 6 / Hummingbird / PostgreSQL 18 / PostgresNIO / Atlas / OpenAPI / Swift OpenAPI Generator。Apple: SwiftUI、iOS・iPadOS 27.2以上。Web: SvelteKit / Svelte 5 Runes / TypeScript / Bun / Vite / Tailwind CSS v4。基盤: Terraform / Cloud Run / Cloud SQL / OCIコンテナ / OpenTelemetry（ローカル実行はApple container）。最新安定版OS・ブラウザを対象とし、不要な後方互換分岐を追加しない。
 
 ログインはPasskey / WebAuthnのみ。社員のGoogle Workspace組織アカウントは所属・本人対応・API認可に使い、GoogleログインをSaunaセッション認証に代用しない。Stripeは決済処理を担当する。Google Cloud Swiftクライアントの対応範囲とWorkspace APIの対応範囲を個別に確認する。Google Chat Bot / sauna-mcpは`sauna-automation`で実装する。`zunda-pixel/GoogleChatApp`とそのProjectは対象外であり変更しない。
 
@@ -69,3 +69,13 @@ Markdownリンク・ADR整合性・backlogのキーと依存関係を検証す�
 このGitHub上のレビューは、実装中の独立Review Agent並行起動と実ビルド・テストに追加する確認である。レビュー依頼だけで成功扱いにしない。自動返信・同じ依頼の連投を避け、レビューroundと対象commitをPRへ記録する。
 
 共通追加規則の適用元: `sauna-studio/.github@e24383d0f9fe6784293e1b781edffd08750f0a20` (`policies/github-codex-review.md`)。
+
+## ローカル開発と認証情報
+
+ローカル開発ではApple `container`を使用し、Docker Engine/Desktop/CLI/Composeを使用しない。実装と検証はローカル作業ブランチで進める。公開ポートはloopbackに限定し、他プロジェクトのコンテナ・volume・サービスを停止/削除しない。既存GitHub Actionsの実行をローカルのApple container検証と混同しない。
+
+APIキー・秘密鍵・DBパスワードなどの認証情報が必要になった時点で依存する作業を停止し、ユーザーに確認する。無断生成・既存credential探索・keychain/環境のsecret値表示・認証無効化による迂回をしない。認証情報をチャット/リポジトリ/ログに残さず、安全なローカル設定方法を案内する。
+
+## Web共通スタック
+
+Bunで依存管理とローカル実行を行う。SvelteKit / Svelte 5 Runes / TypeScript strict / Vite / Tailwind CSS v4 / shadcn-svelte / Lucide Svelte / Superforms + Zod / openapi-fetchを採用。Vitest / Playwright / ESLint / Prettierを実検証する。外部ライブラリは公式を優先し、必要時だけ再現テストと最小差分でforkし、上流PRにつながる形に管理する。
