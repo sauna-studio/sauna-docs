@@ -1384,7 +1384,8 @@
       "body": "全機能・運用・セキュリティの実検証結果を揃え、残課題を可視化する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: Q05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
       "acceptance": [
         "利用者とスタッフの end-to-end シナリオ、CI、独立 review と security review の証跡を保存する。",
-        "MVP 50 件の完了・未完了と blocker を明記し、未承認の本番 deploy や課金を行わず release notes を作成する。"
+        "MVP 50 件の完了・未完了と blocker を明記し、未承認の本番 deploy や課金を行わず release notes を作成する。",
+        "MVP50件・GitHub基盤G8件・Chat/MCP T15件・Workspace W14件の全87計画IDについて、親Epicを除く全前提の完了と実検証証跡を依存グラフで追跡する。"
       ],
       "dependencies": [
         "MVP-045",
@@ -1396,7 +1397,11 @@
         "INTEGRATION-007",
         "INTEGRATION-020",
         "INTEGRATION-028",
-        "INTEGRATION-029"
+        "INTEGRATION-029",
+        "FOUND-003",
+        "FOUND-004",
+        "FOUND-005",
+        "FOUND-007"
       ],
       "area": "docs",
       "phase": "MVP",
@@ -1616,12 +1621,20 @@
       "body": "MCP契約、prompt injection、権限、外部副作用と秘密値漏えいを検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T13\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
       "acceptance": [
         "Tool Review AgentとSecurity Review Agentが実装者と独立して具体的テストを実施する。",
-        "不正tenant/role、データ内指示、未認可tool呼出の拒否を再現し、指摘をIssue/回帰テストへ関連付ける。"
+        "不正tenant/role、データ内指示、未認可tool呼出の拒否を再現し、指摘をIssue/回帰テストへ関連付ける。",
+        "Botイベント認証・照会・各通知・fresh Passkey承認（T04–T10）をレビュー対象へ含め、未完了のままrelease gateを通さない。"
       ],
       "dependencies": [
         "INTEGRATION-007",
         "INTEGRATION-016",
-        "INTEGRATION-017"
+        "INTEGRATION-017",
+        "INTEGRATION-009",
+        "INTEGRATION-010",
+        "INTEGRATION-011",
+        "INTEGRATION-012",
+        "INTEGRATION-013",
+        "INTEGRATION-014",
+        "INTEGRATION-015"
       ],
       "area": "automation",
       "phase": "Integration",

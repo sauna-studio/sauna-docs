@@ -45,6 +45,8 @@ C09/C10とP05–P07は横断的な表示・検証・監査・プライバシー�
 
 同一グループでも依存先の受け入れ条件を満たすまでは完了扱いにしない。親Epicの包含と実装blockerは区別する。
 
+リリース判定MVP-050はMVP50・G8・T15・W14の全87計画IDを対象とする。判定自身を除く86件すべてが推移的依存に含まれる。親Epic自体はリリースgateに含めない。T13の独立レビューはT04–T10のイベント認証・通知・fresh Passkey承認も前提とし、機能未完了のままレビューとreleaseを完了扱いにしない。
+
 1. **EPIC-001 / EPIC-001** `.github` — GitHub 開発基盤（依存: なし）
 2. **EPIC-002 / EPIC-002** `sauna-api` — API・認証・施設境界（依存: なし）
 3. **EPIC-003 / EPIC-003** `sauna-api` — 予約・在庫・決済（依存: なし）
@@ -136,9 +138,9 @@ C09/C10とP05–P07は横断的な表示・検証・監査・プライバシー�
 89. **INTEGRATION-019 / T14** `sauna-automation` — 自動化処理の rate limit・retry・可観測性を整備する（依存: MVP-041, INTEGRATION-004, INTEGRATION-007）
 90. **INTEGRATION-028 / W13** `sauna-automation` — Workspace adapter の契約・障害・所属検証テストを整備する（依存: INTEGRATION-022, INTEGRATION-025, INTEGRATION-026, INTEGRATION-027）
 91. **MVP-048 / Q04** `sauna-docs` — 障害対応・backup・復旧手順を整備する（依存: MVP-044, MVP-047）
-92. **INTEGRATION-018 / T13** `sauna-automation` — Bot・MCP の独立 Tool/Security Review を実施する（依存: INTEGRATION-007, INTEGRATION-016, INTEGRATION-017）
+92. **INTEGRATION-018 / T13** `sauna-automation` — Bot・MCP の独立 Tool/Security Review を実施する（依存: INTEGRATION-007, INTEGRATION-016, INTEGRATION-017, INTEGRATION-009, INTEGRATION-010, INTEGRATION-011, INTEGRATION-012, INTEGRATION-013, INTEGRATION-014, INTEGRATION-015）
 93. **INTEGRATION-020 / T15** `sauna-automation` — Bot・MCP の CI・非本番検証・運用手順を整備する（依存: INTEGRATION-018, INTEGRATION-019, INTEGRATION-008）
-94. **MVP-050 / Q05** `sauna-docs` — MVP の受け入れ・リリース判定を実施する（依存: MVP-045, MVP-048, MVP-049, INTEGRATION-004, INTEGRATION-005, INTEGRATION-006, INTEGRATION-007, INTEGRATION-020, INTEGRATION-028, INTEGRATION-029）
+94. **MVP-050 / Q05** `sauna-docs` — MVP の受け入れ・リリース判定を実施する（依存: MVP-045, MVP-048, MVP-049, INTEGRATION-004, INTEGRATION-005, INTEGRATION-006, INTEGRATION-007, INTEGRATION-020, INTEGRATION-028, INTEGRATION-029, FOUND-003, FOUND-004, FOUND-005, FOUND-007）
 
 ## 実装・レビュー条件
 
