@@ -37,3 +37,11 @@ DB passwordはユーザーが明示許可したローカル専用値のみ生成
 API Issue8/9のDB部分として6業務table、Atlas CE1.3.0の初回forward-only migration、trusted Git baselineの改変拒否、pglast8.7 ASTのDDL guardを実装。空replay DBへ適用/再適用、実drift列の検出/自動修復なし、実app接続SQL21拒否を成功。開発DBへ適用後のhost Swift25tests、Python26testsとOpenAPI4examplesも成功した。独立Review/Securityの未解決blocking指摘なし。
 
 新しいcredentialは生成せず、承認済みlocal DB passwordをprivate一時configで利用した。app roleはDDL/owner/admin membership権限なし。複合FKによる越境参照拒否と、まだ未実装の施設別閲覧/操作認可を区別する。GitHub CIには未接続であり、Issue8/9全体は完了扱いにしていない。
+
+## 施設アクセス・challenge段階
+
+API Issue9のquery層とIssue10のchallenge基盤を追加。外部から生成/JSON decodeできないVerifiedSubjectと、各SQLで施設/active membership/roleを再検査するFacilityStoreを実装した。認証済subjectのproducerはまだなく、業務HTTPは公開していない。
+
+PostgreSQL challenge tableと原子的consumeを追加し、CSPRNG nonceとSHA-256のbrowser-flow binding、RP/origin/purpose、DB時刻での期限を管理する。16並行consumeの1成功、row lock待ちで期限超過の拒否を実DB回帰で確認。host Swift38tests、SQL拒否29件、Python26testsが成功。詳細と独立review結果はsauna-api/docs/LOCAL_IDENTITY.md / LOCAL_VALIDATION.mdに記録する。
+
+ローカル仮想認証器鍵/専用token生成はユーザー承認済み。Sauna本体での追加生成はメモリ上のnonceとflow bindingで、Passkey credentialやログインsessionはまだ生成していない。署名/UV・session/Workspace・公開認証API・remote CIは未実装/未検証の範囲として残る。
