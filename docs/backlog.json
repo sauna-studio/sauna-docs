@@ -1,0 +1,1889 @@
+{
+  "version": 1,
+  "source_note": "提供されたSAUNA_STUDIO_CONTEXT.mdの計画IDとグループ意図を引継ぎ資料として採用。元の個別50件・T15件・W14件の原文題名は資料にないため、以下は要件から具体化したIssueであり原文の再現ではない。",
+  "issues": [
+    {
+      "key": "EPIC-001",
+      "repo": ".github",
+      "title": "GitHub 開発基盤",
+      "body": "共通規則、CI、Project、リポジトリ初期化を整備する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: EPIC-001\n対応精度: グループ横断の新規親Epic。元50件の計画IDには数えない。",
+      "acceptance": [
+        "配下 Issue の受け入れ条件が満たされ、未完了の依存関係が明示されている。",
+        "配下 PR の実テストと独立レビューの証跡が追跡できる。"
+      ],
+      "dependencies": [],
+      "area": "github",
+      "phase": "Foundation",
+      "planning_id": "EPIC-001",
+      "planning_mapping": "umbrella",
+      "planning_note": "グループ横断の新規親Epic。元50件の計画IDには数えない。"
+    },
+    {
+      "key": "EPIC-002",
+      "repo": "sauna-api",
+      "title": "API・認証・施設境界",
+      "body": "OpenAPI と Passkey を中心に、複数施設の業務 API を構築する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: EPIC-002\n対応精度: グループ横断の新規親Epic。元50件の計画IDには数えない。",
+      "acceptance": [
+        "配下 Issue の受け入れ条件が満たされ、未完了の依存関係が明示されている。",
+        "配下 PR の実テストと独立レビューの証跡が追跡できる。"
+      ],
+      "dependencies": [],
+      "area": "api",
+      "phase": "MVP",
+      "planning_id": "EPIC-002",
+      "planning_mapping": "umbrella",
+      "planning_note": "グループ横断の新規親Epic。元50件の計画IDには数えない。"
+    },
+    {
+      "key": "EPIC-003",
+      "repo": "sauna-api",
+      "title": "予約・在庫・決済",
+      "body": "在庫と複数商品予約の整合性を保ち、Stripe 決済を接続する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: EPIC-003\n対応精度: グループ横断の新規親Epic。元50件の計画IDには数えない。",
+      "acceptance": [
+        "配下 Issue の受け入れ条件が満たされ、未完了の依存関係が明示されている。",
+        "配下 PR の実テストと独立レビューの証跡が追跡できる。"
+      ],
+      "dependencies": [],
+      "area": "api",
+      "phase": "MVP",
+      "planning_id": "EPIC-003",
+      "planning_mapping": "umbrella",
+      "planning_note": "グループ横断の新規親Epic。元50件の計画IDには数えない。"
+    },
+    {
+      "key": "EPIC-004",
+      "repo": "sauna-web",
+      "title": "利用者・管理者クライアント",
+      "body": "SvelteKit と SwiftUI の利用者・管理者 UI を構築する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: EPIC-004\n対応精度: グループ横断の新規親Epic。元50件の計画IDには数えない。",
+      "acceptance": [
+        "配下 Issue の受け入れ条件が満たされ、未完了の依存関係が明示されている。",
+        "配下 PR の実テストと独立レビューの証跡が追跡できる。"
+      ],
+      "dependencies": [],
+      "area": "web",
+      "phase": "MVP",
+      "planning_id": "EPIC-004",
+      "planning_mapping": "umbrella",
+      "planning_note": "グループ横断の新規親Epic。元50件の計画IDには数えない。"
+    },
+    {
+      "key": "EPIC-005",
+      "repo": "sauna-infrastructure",
+      "title": "運用・品質・リリース",
+      "body": "OpenTelemetry、Terraform、実環境検証と運用手順を整備する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: EPIC-005\n対応精度: グループ横断の新規親Epic。元50件の計画IDには数えない。",
+      "acceptance": [
+        "配下 Issue の受け入れ条件が満たされ、未完了の依存関係が明示されている。",
+        "配下 PR の実テストと独立レビューの証跡が追跡できる。"
+      ],
+      "dependencies": [],
+      "area": "infra",
+      "phase": "MVP",
+      "planning_id": "EPIC-005",
+      "planning_mapping": "umbrella",
+      "planning_note": "グループ横断の新規親Epic。元50件の計画IDには数えない。"
+    },
+    {
+      "key": "EPIC-006",
+      "repo": "sauna-automation",
+      "title": "Google Workspace・Chat・MCP 連携",
+      "body": "社員確認・業務連携を最小権限で接続する。GoogleChatApp は対象外。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: EPIC-006\n対応精度: グループ横断の新規親Epic。元50件の計画IDには数えない。",
+      "acceptance": [
+        "配下 Issue の受け入れ条件が満たされ、未完了の依存関係が明示されている。",
+        "配下 PR の実テストと独立レビューの証跡が追跡できる。"
+      ],
+      "dependencies": [],
+      "area": "automation",
+      "phase": "Foundation",
+      "planning_id": "EPIC-006",
+      "planning_mapping": "umbrella",
+      "planning_note": "グループ横断の新規親Epic。元50件の計画IDには数えない。"
+    },
+    {
+      "key": "EPIC-007",
+      "repo": "sauna-api",
+      "title": "スタッフ業務・チャット",
+      "body": "スタッフ権限、シフト、設備、利用者とのチャットを整備する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: EPIC-007\n対応精度: グループ横断の新規親Epic。元50件の計画IDには数えない。",
+      "acceptance": [
+        "配下 Issue の受け入れ条件が満たされ、未完了の依存関係が明示されている。",
+        "配下 PR の実テストと独立レビューの証跡が追跡できる。"
+      ],
+      "dependencies": [],
+      "area": "api",
+      "phase": "MVP",
+      "planning_id": "EPIC-007",
+      "planning_mapping": "umbrella",
+      "planning_note": "グループ横断の新規親Epic。元50件の計画IDには数えない。"
+    },
+    {
+      "key": "FOUND-001",
+      "repo": ".github",
+      "title": "Organization 共通開発基盤を整備する",
+      "body": "プロフィール、README、AGENTS.md、Issue Forms、PR テンプレート、CODEOWNERS、Reusable Workflows、Codex エージェント設定を PR で整備する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G01\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "既存 LICENSE と履歴を保護し、main への直接 push を行わず PR を作成する。",
+        "設定構文・workflow を実検証し、独立 Review Agent の指摘と対応を PR に残す。"
+      ],
+      "dependencies": [],
+      "area": "github",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G01",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "FOUND-002",
+      "repo": ".github",
+      "title": "8 リポジトリを安全に初期化する",
+      "body": "API、利用者・管理者 Apple/Web、infrastructure、automation、docs を作成し、明示的な AGENTS.md と最小 CI を配置する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G02\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "存在確認後に不足 repo のみ作成し、既存変更を上書きしない。",
+        "各 repo の初期構築 PR と CI の結果を一覧化する。"
+      ],
+      "dependencies": [
+        "FOUND-001"
+      ],
+      "area": "github",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G02",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "FOUND-003",
+      "repo": ".github",
+      "title": "Organization Project と Issue グラフを構築する",
+      "body": "全 repo 横断 Project、Status・Priority・Phase フィールド、親子・依存関係を整備する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G03\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "全 backlog Issue を安定キーで重複排除し Project に登録する。",
+        "Sub-issues と blocking dependencies を API 上で確認し、未反映分は理由と再実行方法を記録する。"
+      ],
+      "dependencies": [
+        "FOUND-001"
+      ],
+      "area": "github",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G03",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "FOUND-004",
+      "repo": ".github",
+      "title": "Rulesets と Required Checks を設定する",
+      "body": "main の PR 経由変更、force push・削除保護と、実在する CI check を要求する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G04\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "安定した check 名を実行結果で確認してから設定する。",
+        "一人の owner を承認必須で閉め出さず、AI レビュー証跡と保護条件を明示する。"
+      ],
+      "dependencies": [
+        "FOUND-002"
+      ],
+      "area": "github",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G04",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "FOUND-005",
+      "repo": ".github",
+      "title": "依存関係・コード・Secret のセキュリティ検査を整備する",
+      "body": "Dependabot、対象言語の CodeQL、secret scanning と push protection の利用可能性を確認する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G05\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "全対象 repo の Dependabot と CodeQL の適用対象を記録し、実行可能な設定を追加する。",
+        "プラン・権限による制限を記録し、秘密値を出力・コミットしない。"
+      ],
+      "dependencies": [
+        "FOUND-002"
+      ],
+      "area": "github",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G05",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "FOUND-006",
+      "repo": "sauna-docs",
+      "title": "ADR と GitHub Wiki の運用を開始する",
+      "body": "アーキテクチャ決定を repo の ADR で管理し Wiki から参照する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G06\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "複数施設、Passkey のみ、PostgreSQL 正本、Google API 境界、GoogleChatApp 分離を ADR に記録する。",
+        "Wiki が初期化できない場合も原稿と公開手順を保存し、公開済みと誤記しない。"
+      ],
+      "dependencies": [
+        "FOUND-002"
+      ],
+      "area": "docs",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G06",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "FOUND-007",
+      "repo": ".github",
+      "title": "MCP・Skills とローカルツールの実行可能性を監査する",
+      "body": "XcodeMCPKit、NeoSimulator、Swift Build、SwiftUI Skill、TablePro、Atlas、Safari MCP、Playwright を公式手順で調査する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G07\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "利用可否・実行結果・代替・未検証項目の表を作成する。",
+        "システム設定・認証情報・課金に関わる導入を無断で行わず、プロジェクト局所導入を優先する。"
+      ],
+      "dependencies": [
+        "FOUND-001"
+      ],
+      "area": "github",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G07",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "FOUND-008",
+      "repo": ".github",
+      "title": "言語別 CI とリリース・Environment 規約を整備する",
+      "body": "Swift、SvelteKit、Terraform、OpenAPI の checks と Releases・Environments 運用を定義する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G08\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
+      "acceptance": [
+        "再利用 workflow を immutable SHA で呼び出し、必要最小限の権限で実行する。",
+        "実装のある repo は build/test を実行し、本番 deploy と有料リソース作成は別途明示承認を必要とする。"
+      ],
+      "dependencies": [
+        "FOUND-002"
+      ],
+      "area": "github",
+      "phase": "Foundation",
+      "parent": "EPIC-001",
+      "planning_id": "G08",
+      "planning_mapping": "group-intent",
+      "planning_note": "追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-001",
+      "repo": "sauna-automation",
+      "title": "Google Workspace 認可と API 対応表を設計する",
+      "body": "Cloud Swift client の対象 Cloud API と、Workspace REST API の対象を区別し、OAuth scope を機能単位で定義する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\nGoogle Cloud SDK対応表とWorkspace typed REST adapterを区別し、Cloud Tasks/Secret Manager/Storageの対応をChat/Calendar/Directory/Drive対応と混同しない。\n\n計画ID: W01\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "Chat・Calendar・Directory・Groups・Drive の必要 scope と認可主体を一覧化する。",
+        "広範な domain-wide delegation を既定にせず、refresh token・service account の保管方針を ADR 化する。"
+      ],
+      "dependencies": [
+        "FOUND-006"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W01",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-002",
+      "repo": "sauna-automation",
+      "title": "Directory による社員所属確認を実装する",
+      "body": "Workspace 組織アカウント必須を社員登録と定期再確認に反映する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n社員はactiveなWorkspace所属かつ指定Google Group所属であることを検証する。email domain一致だけでは認可しない。stable subject/directory IDを使い、改名を別人扱いしない。\n\n計画ID: W02\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "停止・削除・組織外・検証不能のアカウントを社員として有効化しない。",
+        "Directory 障害・rate limit の再試行と退職後の業務権限失効をテストする。"
+      ],
+      "dependencies": [
+        "INTEGRATION-001",
+        "MVP-005"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W02",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-003",
+      "repo": "sauna-api",
+      "title": "Passkey 利用者と Workspace 社員 ID を紐付ける",
+      "body": "Sauna のログインは Passkey のみとし、Google は所属確認・本人紐付け・API 認可に限定する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: W03\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "検証済み Google subject と Sauna user を安全な再認証フローで一意に紐付ける。",
+        "Google OAuth 成功だけで Sauna セッションを発行せず、紐付け解除と社員失効を監査する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-002",
+        "MVP-009"
+      ],
+      "area": "api",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W03",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-004",
+      "repo": "sauna-automation",
+      "title": "Google Chat Sauna Bot を実装する",
+      "body": "予約照会・通知を Sauna API に委譲する Bot を実装する。独立した GoogleChatApp は変更しない。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n初期Botの操作はread-only照会と通知に限定する。返金・取消・閉鎖等は状態変更toolで直接実行せず、監査可能なaction requestを作りadmin UIのfresh Passkey承認へ誘導する。\n\n計画ID: T01\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "Google Chat 送信元と社員・施設権限を検証し、未認可の照会を拒否する。",
+        "再送イベントを冪等処理し、予約の更新は API 正本で実行し個人情報を space へ過剰表示しない。",
+        "初期Botに予約取消・返金・施設閉鎖の直接変更コマンドが存在しないことを否定テストで確認する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-003",
+        "MVP-024",
+        "MVP-029"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T01",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-005",
+      "repo": "sauna-automation",
+      "title": "Calendar に予約・シフトの派生ビューを同期する",
+      "body": "予約・シフトの正本を Sauna API に保ち、Calendar を派生ビューとして同期する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n初期Calendar同期は一方向とし、予約・シフト・設備メンテナンス・施設閉鎖をPII最小化で公開する。Google Calendarの編集はSauna正本に反映しない。\n\n計画ID: W04\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "更新・取消・再試行時に外部 event ID を対応付けて重複作成しない。",
+        "Calendar 側の編集で予約正本を直接変更せず、同期失敗を可観測化する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-003",
+        "MVP-028",
+        "MVP-029"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W04",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-006",
+      "repo": "sauna-automation",
+      "title": "Groups・Drive の必要範囲を連携する",
+      "body": "業務グループ所属と運用資料への参照を API の施設権限と整合させる。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: W05\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "必要な group と folder のみを対象にし、共有範囲拡大を自動実行しない。",
+        "組織外・失効ユーザーの資料参照を拒否し、API 利用不能時の挙動をテストする。"
+      ],
+      "dependencies": [
+        "INTEGRATION-003",
+        "MVP-011"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W05",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-007",
+      "repo": "sauna-automation",
+      "title": "sauna-mcp の認可付き業務ツールを実装する",
+      "body": "AI エージェントが Sauna API の権限を維持して利用できる MCP を構築する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\nMCP Swift SDK・Streamable HTTP・OAuth 2.1互換の認可を採用する。初期toolsはavailability/bookings/shifts/support counts/facility statusのread-onlyのみ。敏感な変更はauditable action requestとadmin UIのfresh Passkey承認を通す。未検証のrole/tenant入力を権限にしない。\n\n計画ID: T02\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "MCP Swift SDK/Streamable HTTPでschemaを公開し、OAuth issuer・audience・scopeと施設権限を検証する。",
+        "初期toolsはread-onlyのみとし、取消・返金・閉鎖は直接実行できない。権限越境・prompt injection・不正tokenを否定テストする。"
+      ],
+      "dependencies": [
+        "INTEGRATION-003",
+        "MVP-024",
+        "MVP-047"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T02",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "MVP-001",
+      "repo": "sauna-api",
+      "title": "OpenAPI の health・version 契約を定義する",
+      "body": "最初の実装として認証不要の稼働確認とバージョン情報の OpenAPI を設置する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: B01\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "OpenAPI schema を lint し、health/version の成功・エラー形式を機械検証する。",
+        "機密情報・内部構成を返さず、Swift OpenAPI Generator で生成可能な契約にする。"
+      ],
+      "dependencies": [
+        "FOUND-001"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "B01",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-002",
+      "repo": "sauna-api",
+      "title": "Hummingbird の実行可能な API 雛形を構築する",
+      "body": "Swift 6・Hummingbird で health/version を実装し、blindlog-api の構成を適切に参照する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: B02\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "swift build と swift test が成功し、HTTP health/version を実呼び出しする。",
+        "環境変数による port 設定と graceful shutdown を実装し、依存を lock する。"
+      ],
+      "dependencies": [
+        "MVP-001"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "B02",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-003",
+      "repo": "sauna-api",
+      "title": "PostgreSQL 18 と PostgresNIO の基盤を構築する",
+      "body": "接続プールと複数施設を前提とした主キー・施設キーを設計する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: B03\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "PostgreSQL 18 に実接続し、接続失敗・切断時のエラーをテストする。",
+        "認証情報を環境から読み込み、接続ログに秘密値を出さない。"
+      ],
+      "dependencies": [
+        "MVP-002"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "B03",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-004",
+      "repo": "sauna-api",
+      "title": "Atlas によるマイグレーションを導入する",
+      "body": "施設・利用者・商品・予約の schema を version 管理し、破壊的変更をレビュー可能にする。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\nschema.sql をスキーマの正本とし Atlas の forward-only migration を生成・検証する。過去 migration を書き換えず、失敗時は新規 forward fix を適用する。\n\n計画ID: B04\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "空の PostgreSQL 18 へ migration を適用でき、二度目は差分なしになる。",
+        "schema drift と破壊的変更を CI で検出し、rollback/forward fix の手順を残す。",
+        "schema.sql と適用済みDBの差分を検査し、既存migrationの改変をCIで検出する。"
+      ],
+      "dependencies": [
+        "MVP-003"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "B04",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-005",
+      "repo": "sauna-api",
+      "title": "施設境界と tenant context を強制する",
+      "body": "施設 ID をすべての業務データと API 認可に導入し、1施設を特別扱いしない。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: B05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "二施設の fixture で一覧・詳細・更新の施設越境を拒否する。",
+        "クライアント指定 facility ID を信用せず、権限と複合制約で境界を検証する。"
+      ],
+      "dependencies": [
+        "MVP-004"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "B05",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-006",
+      "repo": "sauna-api",
+      "title": "Passkey challenge のライフサイクルを実装する",
+      "body": "WebAuthn の RP ID、origin、challenge、期限と使い捨て状態を管理する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: A01\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "異なる RP/origin、期限切れ、再利用 challenge を拒否する。",
+        "challenge を安全に生成・保存し、二重消費の競合テストを通す。"
+      ],
+      "dependencies": [
+        "MVP-005"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "A01",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-007",
+      "repo": "sauna-api",
+      "title": "Passkey 登録を実装する",
+      "body": "利用者と WebAuthn credential を関連付け、対応する attestation を検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: A02\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "登録成功と不正 origin・不正署名・重複 credential の拒否をテストする。",
+        "credential の秘密鍵をサーバーに保存せず、公開鍵情報へのアクセスを制限する。"
+      ],
+      "dependencies": [
+        "MVP-006"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "A02",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-008",
+      "repo": "sauna-api",
+      "title": "Passkey ログインを実装する",
+      "body": "assertion を検証して利用者を認証し、Google をログイン手段に追加しない。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: A03\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "署名・challenge・user verification を検証し、失敗・再送を拒否する。",
+        "複数端末・同期 Passkey の counter 挙動を仕様化し、rate limit を検証する。"
+      ],
+      "dependencies": [
+        "MVP-007"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "A03",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-009",
+      "repo": "sauna-api",
+      "title": "セッション・ログアウト・Passkey 管理を実装する",
+      "body": "有効期限と失効を持つセッション、追加 credential と削除の再認証を設計する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n複数credentialと安全なaccount recoveryを必須範囲に含める。Googleログイン・メールのみ・スタッフの無審査操作でPasskey保護を迂回しない。\n\n計画ID: A04\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "Web の secure/HttpOnly/SameSite cookie と CSRF 対策、Apple の安全な token 保存契約を検証する。",
+        "ログアウト・credential 削除・セッション失効をテストし、最後の credential 削除の扱いを明示する。",
+        "複数credential登録・端末紛失・最後のcredential喪失の回復手順を脅威分析し、再認証・本人確認・セッション失効を検証する。"
+      ],
+      "dependencies": [
+        "MVP-008"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-002",
+      "planning_id": "A04",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-010",
+      "repo": "sauna-api",
+      "title": "Workspace 必須の社員プロビジョニングを実装する",
+      "body": "所属確認済みの社員だけをスタッフ候補として有効化する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: A05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "社員有効化には検証済み Workspace subject と Passkey user の紐付けを要求する。",
+        "退職・停止の社員を再認証だけで復活させず、権限失効をテストする。"
+      ],
+      "dependencies": [
+        "INTEGRATION-003"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-007",
+      "planning_id": "A05",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-011",
+      "repo": "sauna-api",
+      "title": "スタッフの施設別ロール・認可を実装する",
+      "body": "顧客・スタッフ・施設管理者の権限を明示し、操作ごとに検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: A06\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "別施設スタッフ・未確認社員・一般利用者による管理操作を拒否する。",
+        "ロール変更を監査し、deny by default の認可テストを実行する。"
+      ],
+      "dependencies": [
+        "MVP-010"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-007",
+      "planning_id": "A06",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-012",
+      "repo": "sauna-api",
+      "title": "サウナ・テントの商品カタログ API を実装する",
+      "body": "貸切・共用サウナ、日帰り・宿泊テントの販売区分と利用条件を管理する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: R01\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "四種類の fixture を一覧・詳細で取得でき、施設と公開状態で絞り込める。",
+        "商品ごとに定員・利用時間・泊数条件を検証し、不正入力を拒否する。"
+      ],
+      "dependencies": [
+        "MVP-005"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R01",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-013",
+      "repo": "sauna-api",
+      "title": "リソース・在庫台帳を実装する",
+      "body": "サウナ枠、共用定員、テント個体など商品に対応する在庫単位を管理する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: R02\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "貸切排他・共用定員・テント個体の在庫制約を DB で検証する。",
+        "施設境界・無効リソース・期間重複のテストを行う。"
+      ],
+      "dependencies": [
+        "MVP-012"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R02",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-014",
+      "repo": "sauna-api",
+      "title": "価格・営業日・時間帯ルールを実装する",
+      "body": "日本時間の営業スケジュール、日帰りと宿泊の境界、価格を明示する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n価格は決済金額に直接影響するため Security Review Agent も並行起動する。\n\n計画ID: R03\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "通貨最小単位の整数で価格を扱い、端数と見積もり期限をテストする。",
+        "休業日・日跨ぎ・タイムゾーン・チェックイン/アウト境界を検証する。"
+      ],
+      "dependencies": [
+        "MVP-013"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R03",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-015",
+      "repo": "sauna-api",
+      "title": "空き状況検索 API を実装する",
+      "body": "在庫・予約・有効な hold・メンテナンスを反映した空き状況を返す。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: R04\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "貸切・共用・テントの同一期間で正しい残数を返す。",
+        "境界時刻と期限切れ hold をテストし、検索結果が確保を保証しない契約を明示する。"
+      ],
+      "dependencies": [
+        "MVP-014"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R04",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-016",
+      "repo": "sauna-api",
+      "title": "複数商品カートと見積もりを実装する",
+      "body": "同じ予約にサウナとテントを含む複数商品を組み合わせる。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: R05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "施設・利用日・人数条件を検証し、価格をサーバーで再計算する。",
+        "改ざん金額・売り止め・期限切れ見積もりを拒否し、明細合計の不変条件をテストする。"
+      ],
+      "dependencies": [
+        "MVP-015",
+        "MVP-009"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R05",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-017",
+      "repo": "sauna-api",
+      "title": "期限付き在庫 hold と競合制御を実装する",
+      "body": "PostgreSQL transaction と適切な行ロック・制約で複数在庫を一括確保する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: R06\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "並列要求で貸切重複と共用定員超過を防ぎ、実 PostgreSQL で競合テストを通す。",
+        "複数商品の一つでも不足する場合は全体を rollback し、冪等要求で同じ hold を返す。"
+      ],
+      "dependencies": [
+        "MVP-016"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R06",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-018",
+      "repo": "sauna-api",
+      "title": "複数商品予約の支払待ち集約を原子的に作成する",
+      "body": "hold、予約明細、価格スナップショット、状態遷移を transaction で処理する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\nここでの原子処理は pending_payment の予約集約と在庫割当を対象とする。予約と決済は独立した状態機械とし、支払済 confirmed への遷移は検証済Stripe決済処理のみが実行する。\n\n計画ID: R07\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "すべての明細とpending_payment予約集約を一括作成または全rollbackし、部分予約を残さない。",
+        "無決済でconfirmedへ遷移せず、予約状態と決済状態を分離する。二重処理・施設越境・同時取消をDBと認可の両方でテストする。"
+      ],
+      "dependencies": [
+        "MVP-017"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R07",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-019",
+      "repo": "sauna-api",
+      "title": "hold 失効・在庫解放ジョブを実装する",
+      "body": "期限切れ在庫を冪等に解放し、決済待ち・確定との競合を扱う。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\nStripe Checkout導入後は外部Sessionが支払可能なまま在庫を再販しないよう、Session失効・決済照合とhold解放の順序を設計する。expire失敗や決済競合時は照合完了まで安全側で保持する。\n\n計画ID: R08\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "時刻制御テストで期限直前・直後と確定競合を検証する。",
+        "ジョブ再実行・途中失敗・複数 worker で在庫の過剰解放が起きない。"
+      ],
+      "dependencies": [
+        "MVP-018"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "R08",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-020",
+      "repo": "sauna-api",
+      "title": "Stripe Checkout と決済開始を実装する",
+      "body": "予約 hold に紐付くサーバー計算金額で Stripe の test mode 決済を開始する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\nhosted Checkoutを使用する。2026-11-01に公式Create Session仕様を確認: expires_atは作成後30分〜24時間、既定24時間。短いhold TTLをexpires_atへそのまま指定せず、明示expire API・決済照合・遅延成功の補償と一体で設計する。参照: https://docs.stripe.com/api/checkout/sessions/create?query=expires_at と https://docs.stripe.com/api/checkout/sessions/expire 。実装時にも選定API版を再確認する。\n\n計画ID: P01\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "Stripe idempotency key と booking ID の対応を保存し、重複 Checkout 作成を防ぐ。",
+        "金額改ざん・期限切れ hold を拒否し、Secret をレスポンスとログに含めない。",
+        "Stripe test modeでhosted Checkoutの有効期限制約、hold失効時expire、決済と失効の競合、遅延成功後の返金/手動対応を検証する。"
+      ],
+      "dependencies": [
+        "MVP-019"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "P01",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-021",
+      "repo": "sauna-api",
+      "title": "Stripe webhook の検証と冪等処理を実装する",
+      "body": "raw body の署名検証、イベント ID の一意性と状態遷移を強制する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: P02\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "署名不正・timestamp 超過を拒否し、重複イベントで再確定・二重返金しない。",
+        "順序逆転・成功後失敗通知・DB 書き込み失敗からの再送をテストする。"
+      ],
+      "dependencies": [
+        "MVP-020"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "P02",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-022",
+      "repo": "sauna-api",
+      "title": "決済照合と例外回復を実装する",
+      "body": "Stripe と予約状態を定期照合し、hold 失効後の入金などを安全に処理する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: P03\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "webhook 欠落・遅延・順序逆転を検出し、再取得で整合状態へ収束する。",
+        "期限切れ在庫を無条件確定せず、手動対応または返金への状態遷移を監査する。"
+      ],
+      "dependencies": [
+        "MVP-021"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "P03",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-023",
+      "repo": "sauna-api",
+      "title": "予約取消・キャンセル料・返金を実装する",
+      "body": "予約状態とポリシースナップショットに基づく取消・返金を実装する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: P04\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "利用者本人・施設スタッフの認可と取消期限を検証する。",
+        "二重取消・返金 API timeout・webhook 再送で二重返金せず、在庫解放を一度だけ行う。"
+      ],
+      "dependencies": [
+        "MVP-022"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "P04",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-024",
+      "repo": "sauna-api",
+      "title": "利用者の予約一覧・詳細 API を実装する",
+      "body": "本人の予約、明細、支払状態と変更可能操作を取得できるようにする。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: P05\n対応精度: Payments群への対応は支払状態の利用者表示に限定。元P05の個別意図は資料にないため原文一致は未確認。",
+      "acceptance": [
+        "本人以外の予約 ID 参照を拒否し、施設と利用者の境界を検証する。",
+        "未決済・確定・取消・返金の表示用状態とページングをテストする。"
+      ],
+      "dependencies": [
+        "MVP-023"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-003",
+      "planning_id": "P05",
+      "planning_mapping": "partial",
+      "planning_note": "Payments群への対応は支払状態の利用者表示に限定。元P05の個別意図は資料にないため原文一致は未確認。"
+    },
+    {
+      "key": "MVP-025",
+      "repo": "sauna-api",
+      "title": "利用者・スタッフ間チャット API を実装する",
+      "body": "予約に紐付く会話とメッセージを Sauna API/PostgreSQL の正本として保存する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: O01\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "利用者本人と該当施設スタッフだけが閲覧・投稿できる。",
+        "重複送信、ページング、入力サイズ、個人情報を含むログの抑制をテストする。"
+      ],
+      "dependencies": [
+        "MVP-024",
+        "MVP-011"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-007",
+      "planning_id": "O01",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-026",
+      "repo": "sauna-api",
+      "title": "管理者の商品・価格・営業設定 API を実装する",
+      "body": "施設管理者がカタログと販売ルールを変更できるようにする。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: O02\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "管理者以外と他施設の更新を拒否し、変更履歴を保存する。",
+        "過去予約の価格スナップショットを変更せず、将来の見積もりだけに反映する。"
+      ],
+      "dependencies": [
+        "MVP-014",
+        "MVP-011"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-007",
+      "planning_id": "O02",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-027",
+      "repo": "sauna-api",
+      "title": "設備状態・メンテナンス枠を管理する",
+      "body": "設備の利用停止とメンテナンス期間を在庫の可用性に反映する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n川沿い施設の洪水・天候による臨時閉鎖を含む。閉鎖は施設/期間単位で新規販売を止め、影響する予約を抽出し、個別取消・返金・通知のauditable action requestへ接続する。\n\n計画ID: O03\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "利用停止枠への新規 hold を拒否し、既存予約の競合をスタッフへ明示する。",
+        "施設別認可と期間重複・更新競合をテストする。",
+        "洪水閉鎖とhold作成の競合で新規確保を防ぎ、影響予約一覧・取消返金通知候補を二施設fixtureで確認する。"
+      ],
+      "dependencies": [
+        "MVP-017",
+        "MVP-011"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-007",
+      "planning_id": "O03",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-028",
+      "repo": "sauna-api",
+      "title": "スタッフシフト API を実装する",
+      "body": "施設・社員・期間のシフトと休暇を PostgreSQL 正本で管理する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: O04\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "社員の有効状態、施設権限、重複勤務と日跨ぎ時間を検証する。",
+        "一覧・作成・更新・取消を実テストし、更新競合と監査を確認する。"
+      ],
+      "dependencies": [
+        "MVP-011"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-007",
+      "planning_id": "O04",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-029",
+      "repo": "sauna-api",
+      "title": "業務イベント outbox と通知を実装する",
+      "body": "予約・決済・シフトイベントを DB commit と原子的に outbox へ記録する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: O05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "transaction rollback 時は通知せず、再試行で外部通知が重複しない設計を検証する。",
+        "通知先ごとに最小情報だけを渡し、失敗・遅延・dead letter を可観測化する。"
+      ],
+      "dependencies": [
+        "MVP-024",
+        "MVP-028"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-007",
+      "planning_id": "O05",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-030",
+      "repo": "sauna-web",
+      "title": "SvelteKit 利用者 Web の基盤を作成する",
+      "body": "TypeScript strict と Tweetbot Vintage/Pumpkin の由来を記録した UI token を導入する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: B06\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "check・lint・unit test・production build が成功する。",
+        "現行安定ブラウザの対象を記録し、テーマ切替と responsive layout を確認する。"
+      ],
+      "dependencies": [
+        "FOUND-008",
+        "MVP-001"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "B06",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-031",
+      "repo": "sauna-web",
+      "title": "Web の Passkey 認証 UI を実装する",
+      "body": "WebAuthn API と Sauna の登録・ログイン・セッション API を接続する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: C01\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "実ブラウザまたは仮想 authenticator で登録・認証・ログアウトを検証する。",
+        "cancel・未対応・期限切れの UI と CSRF 対策を確認し、Google login を追加しない。"
+      ],
+      "dependencies": [
+        "MVP-030",
+        "MVP-009"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C01",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-032",
+      "repo": "sauna-web",
+      "title": "商品・空き状況検索画面を実装する",
+      "body": "施設と日付からサウナ・テントの条件と残数を検索できるようにする。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: C02\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "日帰り・宿泊と人数条件を API 契約どおり送信し、満席・休業・エラーを表示する。",
+        "日付境界とキーボード操作を browser test で確認する。"
+      ],
+      "dependencies": [
+        "MVP-030",
+        "MVP-015"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C02",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-033",
+      "repo": "sauna-web",
+      "title": "複数商品予約と Stripe 遷移 UI を実装する",
+      "body": "カート、サーバー見積もり、hold、Checkout 遷移と復帰後確認を構築する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: C03\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "サウナとテントを同時予約でき、金額は API 見積もりを表示する。",
+        "hold 失効・在庫競合・決済 cancel を処理し、復帰 URL だけで支払成功と判断しない。"
+      ],
+      "dependencies": [
+        "MVP-031",
+        "MVP-032",
+        "MVP-021"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C03",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-034",
+      "repo": "sauna-web",
+      "title": "予約管理とチャット画面を実装する",
+      "body": "本人の予約詳細、取消、支払状態、スタッフとの会話を表示する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: C04\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "他利用者データを表示せず、API 認可エラーとセッション失効を扱う。",
+        "メッセージ再送・空状態・返金進行中を実 browser test で確認する。"
+      ],
+      "dependencies": [
+        "MVP-033",
+        "MVP-025"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C04",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-035",
+      "repo": "sauna-admin-web",
+      "title": "管理者 SvelteKit Web と予約・設備管理を実装する",
+      "body": "共通 design token と Passkey を用い、施設切替・予約一覧・設備設定を提供する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\nスタッフによる代理予約を提供する場合も、施設ロール・利用者同意の根拠・価格・在庫制約・監査を維持し、顧客のPasskeyとしてログインしない。\n\n計画ID: C05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "スタッフロール別に操作を制御し、API が権限を再検証する。",
+        "production build と browser test で別施設への切替・認可拒否・設備停止を確認する。",
+        "代理予約の作成者と利用者を区別し、無権限操作と他施設への代理予約を拒否する。"
+      ],
+      "dependencies": [
+        "FOUND-008",
+        "MVP-026",
+        "MVP-027",
+        "MVP-031"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C05",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-036",
+      "repo": "sauna-admin-web",
+      "title": "シフト・社員・チャット管理画面を実装する",
+      "body": "Workspace 所属状態を表示し、シフトと会話対応を管理する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: O06\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "組織未確認・退職社員の状態を表示し、許可されない編集を拒否する。",
+        "シフト更新競合、期間移動、未読会話を browser test で確認する。"
+      ],
+      "dependencies": [
+        "MVP-035",
+        "MVP-028",
+        "MVP-025"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "O06",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-037",
+      "repo": "sauna-app",
+      "title": "SwiftUI iOS・iPadOS 利用者アプリ基盤を作成する",
+      "body": "iOS/iPadOS 27.2 以上、Swift 6、OpenAPI client と Vintage/Pumpkin token を導入する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: B07\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "対象 simulator で build と unit test が成功し、依存と生成手順を固定する。",
+        "iPhone/iPad の layout とテーマを実行・preview で確認する。"
+      ],
+      "dependencies": [
+        "FOUND-008",
+        "MVP-001"
+      ],
+      "area": "apple",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "B07",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-038",
+      "repo": "sauna-app",
+      "title": "Apple アプリの Passkey 認証を実装する",
+      "body": "AuthenticationServices と associated domains を用い Sauna API に接続する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: C06\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "実機または対応 simulator で登録・認証・cancel の挙動を確認する。",
+        "Keychain にセッションを保存し、期限切れとログアウトで削除されることをテストする。"
+      ],
+      "dependencies": [
+        "MVP-037",
+        "MVP-009"
+      ],
+      "area": "apple",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C06",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-039",
+      "repo": "sauna-app",
+      "title": "利用者アプリの予約・決済・チャットを実装する",
+      "body": "商品検索、複数カート、Stripe 決済、予約詳細とチャットを構築する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: C07\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "iPhone/iPad でサウナとテントの同時予約から支払状態確認までを実行する。",
+        "通信切断・hold 失効・認証失効を扱い、決済成功は API 正本で確認する。"
+      ],
+      "dependencies": [
+        "MVP-038",
+        "MVP-025",
+        "MVP-033"
+      ],
+      "area": "apple",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C07",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-040",
+      "repo": "sauna-admin-app",
+      "title": "SwiftUI 管理者アプリを実装する",
+      "body": "施設別予約・設備・社員・シフト・チャットを iOS/iPadOS 27.2 以上で提供する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: C08\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "build/test と simulator 動作確認で主要スタッフ業務を実行する。",
+        "Passkey のみでログインし、Workspace 所属・施設ロールの失効を即座に扱う。"
+      ],
+      "dependencies": [
+        "MVP-037",
+        "MVP-038",
+        "MVP-036"
+      ],
+      "area": "apple",
+      "phase": "MVP",
+      "parent": "EPIC-004",
+      "planning_id": "C08",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-041",
+      "repo": "sauna-infrastructure",
+      "title": "OpenTelemetry の trace・metric・log を整備する",
+      "body": "API と非同期処理を相関 ID で結び、PII と credential を除外する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: Q01\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "ローカル collector で HTTP・DB・outbox の trace と主要 metric を実受信する。",
+        "予約者名・メール・chat本文・token・決済情報が telemetry に含まれないことを検査する。"
+      ],
+      "dependencies": [
+        "MVP-002",
+        "MVP-029"
+      ],
+      "area": "infra",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "Q01",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-042",
+      "repo": "sauna-api",
+      "title": "API コンテナと PostgreSQL 18 開発環境を作成する",
+      "body": "Swift Linux build、非 root 実行とローカル DB/collector の起動手順を整備する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: B08\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "container build と health smoke test、PostgreSQL 接続試験が成功する。",
+        "イメージに Secrets を含めず、signal shutdown と read-only 運用の可否を検証する。"
+      ],
+      "dependencies": [
+        "MVP-003",
+        "MVP-041"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "B08",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-043",
+      "repo": "sauna-infrastructure",
+      "title": "Cloud Run・Cloud SQL の Terraform を設計・検証する",
+      "body": "PostgreSQL 18 対応状況を公式確認し、network・IAM・backup・state を最小権限で定義する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: Q02\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "terraform fmt/validate と静的検査が成功し、provider lock を保存する。",
+        "plan の前提・想定課金・権限を記録し、有料リソースの apply は明示承認まで実行しない。"
+      ],
+      "dependencies": [
+        "FOUND-008",
+        "MVP-042"
+      ],
+      "area": "infra",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "Q02",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-044",
+      "repo": "sauna-infrastructure",
+      "title": "staging 用 CI/CD と Environment を定義する",
+      "body": "GitHub OIDC、Environment protection、migration と image deploy の手順を構築する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: Q03\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "静的 CI が成功し、長期 service account key を使わない認可設計を記録する。",
+        "実 deploy は承認された staging リソースのみを対象とし、未実行なら検証未了と明記する。"
+      ],
+      "dependencies": [
+        "MVP-043"
+      ],
+      "area": "infra",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "Q03",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-045",
+      "repo": "sauna-api",
+      "title": "予約・決済・認証の統合・競合テストを整備する",
+      "body": "実 PostgreSQL 18 と Stripe test fixtures を使い主要不変条件を検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: P06\n対応精度: Payments群への対応は決済/予約競合の統合検証。品質検証も含む横断Issueで元P06との一致は未確認。",
+      "acceptance": [
+        "同時予約、hold 失効、重複・順序逆転 webhook、施設越境を CI で再現する。",
+        "発見バグは既存 Issue を照合し、新規または関連 Issue と回帰テストを作成する。"
+      ],
+      "dependencies": [
+        "MVP-023",
+        "MVP-009",
+        "MVP-042"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "P06",
+      "planning_mapping": "partial",
+      "planning_note": "Payments群への対応は決済/予約競合の統合検証。品質検証も含む横断Issueで元P06との一致は未確認。"
+    },
+    {
+      "key": "MVP-046",
+      "repo": "sauna-docs",
+      "title": "個人情報の保持・削除・利用規約を設計する",
+      "body": "予約・会話・社員・監査データの最小化、保持期間と削除例外を定義する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: C10\n対応精度: Clients群への対応は退会・保持・削除の利用者フロー仕様。文書中心の横断Issueで元C10の実装意図は未確認。",
+      "acceptance": [
+        "データ項目・目的・保持期間・アクセス主体と削除フローを文書化する。",
+        "退会時の予約/会計保持と Passkey/セッション失効を検証可能な仕様にする。"
+      ],
+      "dependencies": [
+        "FOUND-006",
+        "MVP-025"
+      ],
+      "area": "docs",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "C10",
+      "planning_mapping": "partial",
+      "planning_note": "Clients群への対応は退会・保持・削除の利用者フロー仕様。文書中心の横断Issueで元C10の実装意図は未確認。"
+    },
+    {
+      "key": "MVP-047",
+      "repo": "sauna-api",
+      "title": "業務監査ログを実装する",
+      "body": "施設権限・予約・決済・シフトの変更主体と結果を改ざん耐性のある履歴へ記録する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: P07\n対応精度: Payments群への対応は決済監査を含む業務監査。元P07の個別意図は未確認。",
+      "acceptance": [
+        "誰が・どの施設で・何を変更したかを追跡でき、失敗・権限拒否も監査する。",
+        "秘密値・chat本文を保存せず、閲覧権限・保持と相関 ID をテストする。"
+      ],
+      "dependencies": [
+        "MVP-023",
+        "MVP-028",
+        "MVP-046"
+      ],
+      "area": "api",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "P07",
+      "planning_mapping": "partial",
+      "planning_note": "Payments群への対応は決済監査を含む業務監査。元P07の個別意図は未確認。"
+    },
+    {
+      "key": "MVP-048",
+      "repo": "sauna-docs",
+      "title": "障害対応・backup・復旧手順を整備する",
+      "body": "DB 復旧、決済照合、在庫不整合、Workspace 障害と鍵失効の runbook を作成する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: Q04\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "机上演習または承認済み非本番環境で復旧手順を検証し、所要時間を記録する。",
+        "未検証の restore・本番権限・課金操作を明示し、連絡先や Secrets を公開しない。"
+      ],
+      "dependencies": [
+        "MVP-044",
+        "MVP-047"
+      ],
+      "area": "docs",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "Q04",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "MVP-049",
+      "repo": "sauna-web",
+      "title": "アクセシビリティと最新安定ブラウザ互換性を検証する",
+      "body": "利用者・管理者 Web と Apple の主要予約フローを対象に検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: C09\n対応精度: Clients群への対応は全クライアントのアクセシビリティ検証。品質横断Issueで元C09との一致は未確認。",
+      "acceptance": [
+        "Web のキーボード・focus・contrast、Apple の VoiceOver・Dynamic Type を確認する。",
+        "対応 OS/ブラウザ版と未検証環境を記録し、重大な利用不能を Issue 化して修正する。"
+      ],
+      "dependencies": [
+        "MVP-034",
+        "MVP-036",
+        "MVP-039",
+        "MVP-040"
+      ],
+      "area": "web",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "C09",
+      "planning_mapping": "partial",
+      "planning_note": "Clients群への対応は全クライアントのアクセシビリティ検証。品質横断Issueで元C09との一致は未確認。"
+    },
+    {
+      "key": "MVP-050",
+      "repo": "sauna-docs",
+      "title": "MVP の受け入れ・リリース判定を実施する",
+      "body": "全機能・運用・セキュリティの実検証結果を揃え、残課題を可視化する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: Q05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
+      "acceptance": [
+        "利用者とスタッフの end-to-end シナリオ、CI、独立 review と security review の証跡を保存する。",
+        "MVP 50 件の完了・未完了と blocker を明記し、未承認の本番 deploy や課金を行わず release notes を作成する。",
+        "MVP50件・GitHub基盤G8件・Chat/MCP T15件・Workspace W14件の全87計画IDについて、親Epicを除く全前提の完了と実検証証跡を依存グラフで追跡する。"
+      ],
+      "dependencies": [
+        "MVP-045",
+        "MVP-048",
+        "MVP-049",
+        "INTEGRATION-004",
+        "INTEGRATION-005",
+        "INTEGRATION-006",
+        "INTEGRATION-007",
+        "INTEGRATION-020",
+        "INTEGRATION-028",
+        "INTEGRATION-029",
+        "FOUND-003",
+        "FOUND-004",
+        "FOUND-005",
+        "FOUND-007"
+      ],
+      "area": "docs",
+      "phase": "MVP",
+      "parent": "EPIC-005",
+      "planning_id": "Q05",
+      "planning_mapping": "group-intent",
+      "planning_note": "計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-008",
+      "repo": "sauna-automation",
+      "title": "Google Chat Bot・Workspace Sync・MCP を別プロセスとして分離する",
+      "body": "Bot、同期worker、MCPのdeployable単位と認可境界を分ける。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T03\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "各processの設定schemaとhealth checkを実行検証し、credentialとscopeを共有しすぎない。",
+        "GoogleChatAppを移動・複製・変更せず、process間呼出は認証されたSauna APIに限定する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-004",
+        "INTEGRATION-007"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T03",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-009",
+      "repo": "sauna-automation",
+      "title": "Google Chat イベントの送信元検証と重複排除を実装する",
+      "body": "イベント認証、再送、thread/spaceの対応と社員権限を検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T04\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "不正audience・送信元・期限切れ要求を拒否し、PIIを診断ログに出さない。",
+        "同一イベントの並列再送で返信とaction requestが重複しない。"
+      ],
+      "dependencies": [
+        "INTEGRATION-004"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T04",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-010",
+      "repo": "sauna-automation",
+      "title": "Bot の施設・空き状況・予約 read-only 照会を実装する",
+      "body": "検証済社員とfacility権限から対象を決め、availability/bookings/facility statusを照会する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T05\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "入力のtenant/role偽装と他施設予約の参照を拒否する。",
+        "非公開PIIをspaceへ出さず、認可範囲の要約とadminへの安全なリンクを返す。"
+      ],
+      "dependencies": [
+        "INTEGRATION-004",
+        "MVP-015",
+        "MVP-024"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T05",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-011",
+      "repo": "sauna-automation",
+      "title": "予約・決済の業務通知を Google Chat に配信する",
+      "body": "outboxから予約成立・取消・支払例外の通知を最小データで配信する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T06\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "再試行・重複イベントで同じ通知が増殖せず、配送状態を記録する。",
+        "spaceの施設対応と通知許可を確認し、顧客名・支払情報を過剰表示しない。"
+      ],
+      "dependencies": [
+        "INTEGRATION-004",
+        "MVP-029"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T06",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-012",
+      "repo": "sauna-automation",
+      "title": "シフト変更と業務予定を Google Chat へ通知する",
+      "body": "承認された社員のシフト変更と勤務案内を通知する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T07\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "シフト変更・取消を冪等通知し、退職/停止社員へ通知しない。",
+        "他施設への通知漏えいと設定されていないspaceへの配信を拒否する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-004",
+        "MVP-028",
+        "MVP-029"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T07",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-013",
+      "repo": "sauna-automation",
+      "title": "サポート件数照会と将来の Chat bridge 境界を定義する",
+      "body": "初期は未対応件数とadminリンクのread-only照会。顧客会話本文のbridgeは初期無効とする。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T08\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "support countsの施設別権限と顧客情報非表示をテストする。",
+        "将来bridgeの同意・参加者・保持・thread対応・漏えい対策をADRにし、未承認で有効化しない。"
+      ],
+      "dependencies": [
+        "INTEGRATION-004",
+        "MVP-025"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T08",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-014",
+      "repo": "sauna-automation",
+      "title": "洪水・天候閉鎖と業務障害を Google Chat へ通知する",
+      "body": "APIの閉鎖/incidentイベントから施設状況と影響件数を通知する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T09\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "閉鎖通知の重複を抑え、対象施設と期間・影響件数の正確さをテストする。",
+        "通知から直接閉鎖解除・取消・返金を実行せず、adminの承認画面へ誘導する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-004",
+        "MVP-027",
+        "MVP-029"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T09",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-015",
+      "repo": "sauna-automation",
+      "title": "敏感操作の action request と fresh Passkey 承認を実装する",
+      "body": "Chat/MCPからの取消・返金・閉鎖要求を監査可能な依頼として保存し、adminで再承認する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T10\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "要求内容・施設・対象・期限を署名/検証し、fresh Passkeyと現在の施設ロールで承認する。",
+        "replay・承認後の対象改変・期限切れ・二重承認を拒否し、業務更新は既存APIの制約と監査を通す。"
+      ],
+      "dependencies": [
+        "MVP-009",
+        "MVP-011",
+        "MVP-047",
+        "INTEGRATION-004"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T10",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-016",
+      "repo": "sauna-automation",
+      "title": "sauna-mcp の OAuth 2.1互換認可を検証する",
+      "body": "Streamable HTTP公開に必要なissuer/audience/scopeとtoken取り扱いを定義する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T11\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "不正issuer/audience/scope、期限切れtoken、第三者tokenのpassthroughを拒否する。",
+        "tokenから認可主体を解決し、client入力のrole/tenantでは権限が増えないことを検証する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-007"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T11",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-017",
+      "repo": "sauna-automation",
+      "title": "read-only MCP tools の schema と結果範囲を整備する",
+      "body": "availability/bookings/shifts/support counts/facility statusをSwift SDKの型付きtoolとして公開する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T12\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "全tool入力/結果schemaとページング・件数上限・施設scopeを契約検証する。",
+        "変更系toolを公開せず、本文・個人情報の最小化と認可拒否の結果をテストする。"
+      ],
+      "dependencies": [
+        "INTEGRATION-007",
+        "MVP-028",
+        "MVP-025"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T12",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-018",
+      "repo": "sauna-automation",
+      "title": "Bot・MCP の独立 Tool/Security Review を実施する",
+      "body": "MCP契約、prompt injection、権限、外部副作用と秘密値漏えいを検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T13\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "Tool Review AgentとSecurity Review Agentが実装者と独立して具体的テストを実施する。",
+        "不正tenant/role、データ内指示、未認可tool呼出の拒否を再現し、指摘をIssue/回帰テストへ関連付ける。",
+        "Botイベント認証・照会・各通知・fresh Passkey承認（T04–T10）をレビュー対象へ含め、未完了のままrelease gateを通さない。"
+      ],
+      "dependencies": [
+        "INTEGRATION-007",
+        "INTEGRATION-016",
+        "INTEGRATION-017",
+        "INTEGRATION-009",
+        "INTEGRATION-010",
+        "INTEGRATION-011",
+        "INTEGRATION-012",
+        "INTEGRATION-013",
+        "INTEGRATION-014",
+        "INTEGRATION-015"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T13",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-019",
+      "repo": "sauna-automation",
+      "title": "自動化処理の rate limit・retry・可観測性を整備する",
+      "body": "Chat/MCP/Workspaceの相関ID、指数backoff、dead letterとPII除外を設計する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T14\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "429/5xx/timeoutの再試行と最大試行数を実テストし、再試行可能性を区別する。",
+        "credential・顧客会話・メールをtelemetryに含めず、障害時の再処理経路を記録する。"
+      ],
+      "dependencies": [
+        "MVP-041",
+        "INTEGRATION-004",
+        "INTEGRATION-007"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T14",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-020",
+      "repo": "sauna-automation",
+      "title": "Bot・MCP の CI・非本番検証・運用手順を整備する",
+      "body": "別プロセスのbuild/testとread-only契約をCI化し、運用/停止/鍵失効手順を文書化する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T15\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "Swift build/testとtool契約・否定テストがCIで成功し、非本番動作検証の有無を区別する。",
+        "デプロイや有料リソース作成は承認済み範囲に限定し、未設定の認証/環境を未検証と明記する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-018",
+        "INTEGRATION-019",
+        "INTEGRATION-008"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "T15",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-021",
+      "repo": "sauna-automation",
+      "title": "Workspace の stable ID・active・Group 所属を検証する",
+      "body": "email domainのみではなくsubject/directory IDとactive状態・許可Groupを照合する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W06\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "改名・alias・組織外・Group脱退・停止・削除のfixtureで認可結果を検証する。",
+        "DirectoryとGroupsの取得結果を施設ロールへ無条件昇格させず、紐付け監査を保存する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-002",
+        "INTEGRATION-006"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W06",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-022",
+      "repo": "sauna-automation",
+      "title": "所属再検証・退職時の権限とセッション失効を実装する",
+      "body": "定期再検証と失効イベントをスタッフ権限・連携token・セッションへ反映する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W07\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "退職・停止・Group脱退後に既存セッションでスタッフ操作できないことをテストする。",
+        "API障害時のfail-safeと猶予方針をADR化し、無期限キャッシュで所属確認を迂回しない。"
+      ],
+      "dependencies": [
+        "INTEGRATION-003",
+        "INTEGRATION-021",
+        "MVP-011"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W07",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-023",
+      "repo": "sauna-automation",
+      "title": "Workspace OAuth token の安全な保管・更新・失効を実装する",
+      "body": "最小scopeで認可し、refresh token等をローカルfixtureと本番秘密管理で分離する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W08\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "tokenは暗号化保管し、ログ・Issue・レスポンスへ出さず、refresh競合をテストする。",
+        "認可取消・期限切れ・退職の失効を処理し、domain-wide delegationは別途明示承認を要求する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-001",
+        "INTEGRATION-003"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W08",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-024",
+      "repo": "sauna-automation",
+      "title": "Calendar の予約・シフト・設備・閉鎖マッピングを実装する",
+      "body": "Sauna正本からPII最小の派生eventを作成し、外部IDを対応付ける。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W09\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "予約、シフト、メンテナンス、洪水閉鎖の更新/取消を冪等に反映する。",
+        "外部eventの編集・削除で在庫や予約正本を変更せず、必要なら正本から修復する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-005",
+        "MVP-027"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W09",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-025",
+      "repo": "sauna-automation",
+      "title": "Calendar 同期の再試行・drift・再構築を検証する",
+      "body": "outbox配送失敗と外部eventの欠落/改変を検出し、派生ビューを修復する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W10\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "429/timeout/重複配送と削除eventから一方向同期が収束することをテストする。",
+        "再構築で同じeventが増殖せず、予約正本へ逆同期しないことを確認する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-024"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W10",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-026",
+      "repo": "sauna-automation",
+      "title": "Drive・Docs の運用資料参照を最小権限で連携する",
+      "body": "承認されたfolderとrunbookへの参照だけを提供する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W11\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "組織外・停止社員・許可外folderを拒否し、公開共有を自動作成しない。",
+        "文書のアクセス権とSauna facility権限を検証し、必要なscopeだけで操作できることをテストする。"
+      ],
+      "dependencies": [
+        "INTEGRATION-006",
+        "INTEGRATION-023"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W11",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-027",
+      "repo": "sauna-automation",
+      "title": "Gmail による組織向け業務通知の境界を定義する",
+      "body": "Gmailを社員向け通知の任意連携として扱い、受信箱全体の読取を要求しない。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W12\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "送信対象と必要scopeを機能単位で文書化し、組織外や失効社員への誤送信を拒否する。",
+        "実送信は認可済み非本番宛先でのみ検証し、未認可時はfixture試験と未検証を明記する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-001",
+        "INTEGRATION-023",
+        "MVP-029"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W12",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-028",
+      "repo": "sauna-automation",
+      "title": "Workspace adapter の契約・障害・所属検証テストを整備する",
+      "body": "Directory/Groups/Calendar/Drive/Gmailのtyped adapterをfixtureと承認済sandboxで検証する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W13\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "scope不足・rate limit・部分障害・失効の契約テストをCIで実行する。",
+        "実API接続した範囲とfixtureのみの範囲を明記し、個人情報や実tokenをfixtureに含めない。"
+      ],
+      "dependencies": [
+        "INTEGRATION-022",
+        "INTEGRATION-025",
+        "INTEGRATION-026",
+        "INTEGRATION-027"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W13",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    },
+    {
+      "key": "INTEGRATION-029",
+      "repo": "sauna-automation",
+      "title": "Google Cloud Swift SDK と Workspace REST adapter を区分する",
+      "body": "Cloud Tasks/Secret Manager/StorageのSDK対応とChat/Calendar/Directory/Groups/Drive/Gmailの別adapterを確認する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: W14\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
+      "acceptance": [
+        "採用APIごとの公式対応表、認可方式、scope、library版をADRに保存する。",
+        "未対応Workspace APIをCloud SDKで使えると記載せず、typed REST contractと実利用範囲を検証する。"
+      ],
+      "dependencies": [
+        "INTEGRATION-001"
+      ],
+      "area": "automation",
+      "phase": "Integration",
+      "parent": "EPIC-006",
+      "planning_id": "W14",
+      "planning_mapping": "group-intent",
+      "planning_note": "引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。"
+    }
+  ],
+  "planning_source": {
+    "document": "SAUNA_STUDIO_CONTEXT.md",
+    "status": "handoff-summary-reviewed-original-issue-text-unavailable",
+    "mvp_groups": {
+      "B": 8,
+      "A": 6,
+      "R": 8,
+      "P": 7,
+      "O": 6,
+      "C": 10,
+      "Q": 5
+    },
+    "additional_groups": {
+      "G": 8,
+      "T": 15,
+      "W": 14
+    }
+  }
+}
