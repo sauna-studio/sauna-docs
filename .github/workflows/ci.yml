@@ -14,3 +14,12 @@ jobs:
     uses: sauna-studio/.github/.github/workflows/reusable-repository.yml@84222ff551e9b6e9bab6ba4f29fe3ddb990b37cb
     permissions:
       contents: read
+  wiki-links:
+    name: Wiki links survive export
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s scripts -v
