@@ -13,3 +13,4 @@ ADRを変更したPRではこの索引とsauna-docsへの導線も更新する�
 - [ADR-0009 認証境界とchallenge消費](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0009-identity-boundary-and-challenges.md)
 - [ADR-0010 blindlog-api参照](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0010-blindlog-api-reference.md)
 - [ADR-0011 Dependabotはブロッカーにしない](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0011-dependabot-nonblocking.md)
+- [ADR-0012 ローカルPasskey登録・署名検証・セッション（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0012-local-passkey-authentication.md)
