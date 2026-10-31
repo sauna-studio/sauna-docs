@@ -47,3 +47,7 @@ PostgreSQL challenge tableと原子的consumeを追加し、CSPRNG nonceとSHA-2
 ローカル仮想認証器鍵/専用token生成はユーザー承認済み。Sauna本体での追加生成はメモリ上のnonceとflow bindingで、Passkey credentialやログインsessionはまだ生成していない。署名/UV・session/Workspace・公開認証API・remote CIは未実装/未検証の範囲として残る。
 
 最終sourceのApple container/Linux release build/testも成功（24成功、secretを渡さないDB14件はskip）。API新imageの再起動後health/versionを実HTTPで確認した。上流WebAuthn評価はbeta1で38、修正済main固定SHAで63tests成功し、互換修正が既に本家にあるため重複forkなし。Sauna依存へは未追加。
+
+## blindlog-api参照の固定
+
+user指定blindlog-api@82a13ed73fff44984e8954781d669cf8320883eaのPackage/Sources/lockを基準にした構成・依存/fork評価をsauna-api/docs/BLINDLOG_REFERENCE.mdへ記録。自前production6targetsへ同じ厳格compiler設定を適用し、public/direct importsを修正。host build/実DB38testsとsubject境界scriptが成功、独立Review/Securityのblocking指摘なし。依存は無差別に追加せず、認証/型付きSQL/OTel等の採用評価の起点とする。ADR0010とWiki索引へ反映済み。今回もlocal-only。
