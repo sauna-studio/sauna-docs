@@ -51,3 +51,7 @@ PostgreSQL challenge tableと原子的consumeを追加し、CSPRNG nonceとSHA-2
 ## blindlog-api参照の固定
 
 user指定blindlog-api@82a13ed73fff44984e8954781d669cf8320883eaのPackage/Sources/lockを基準にした構成・依存/fork評価をsauna-api/docs/BLINDLOG_REFERENCE.mdへ記録。自前production6targetsへ同じ厳格compiler設定を適用し、public/direct importsを修正。host build/実DB38testsとsubject境界scriptが成功、独立Review/Securityのblocking指摘なし。依存は無差別に追加せず、認証/型付きSQL/OTel等の採用評価の起点とする。ADR0010とWiki索引へ反映済み。今回もlocal-only。
+
+ユーザー指示によりDependabotの失敗・通知は対応対象/ブロッカーから除外（ADR0011）。sauna-api#41の復旧待ちは行わず、依存差分/lockfileと通常build/test/reviewを継続する。GitHub上の状態変更は未実施。
+
+blindlog参照の厳格設定はApple container/Linux releaseでもbuild/test成功（24成功、DB14件は秘密情報を渡さずskip、host実DB38件で補完）。

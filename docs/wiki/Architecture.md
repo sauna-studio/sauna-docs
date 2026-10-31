@@ -12,3 +12,4 @@ ADRを変更したPRではこの索引とsauna-docsへの導線も更新する�
 - [ADR-0008 施設参照整合性とmigration](../adr/0008-local-schema-and-migrations.md)
 - [ADR-0009 認証境界とchallenge消費](../adr/0009-identity-boundary-and-challenges.md)
 - [ADR-0010 blindlog-api参照](../adr/0010-blindlog-api-reference.md)
+- [ADR-0011 Dependabotはブロッカーにしない](../adr/0011-dependabot-nonblocking.md)
