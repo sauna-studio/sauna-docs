@@ -9,3 +9,4 @@ ADRを変更したPRではこの索引とsauna-docsへの導線も更新する�
 
 - [ADR-0006 ローカルApple container](../adr/0006-local-apple-container.md)
 - [ADR-0007 Webスタック](../adr/0007-web-stack.md)
+- [ADR-0008 施設参照整合性とmigration](../adr/0008-local-schema-and-migrations.md)

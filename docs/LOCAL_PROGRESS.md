@@ -30,4 +30,10 @@ DB passwordはユーザーが明示許可したローカル専用値のみ生成
 
 公式のHummingbird/PostgresNIO/Swift OpenAPI、SvelteKitと指定Web libraryを利用。現時点でforkが必要な上流不具合は見つかっていない。必要になったら再現テスト、最小fork差分、固定revision、上流PRの順に追跡する。
 
-次はIssue/ADRの依存関係に従い、業務schemaとAtlas migration、施設境界のDB制約・統合テストへ進む。Passkey、予約競合、Stripe、Workspaceは未実装。外部credentialが必要になった時点で確認する。Safari実機/iOS、リモートCI、本番環境は今回未検証。
+業務schemaとAtlas migration、施設境界のDB制約・統合テストを追加した（ADR0008）。次はCI接続と認証済tenant context/API認可へ進む。Passkey、予約競合、Stripe、Workspaceは未実装。外部credentialが必要になった時点で確認する。Safari実機/iOS、リモートCI、本番環境は今回未検証。
+
+## schema/migration追加段階
+
+API Issue8/9のDB部分として6業務table、Atlas CE1.3.0の初回forward-only migration、trusted Git baselineの改変拒否、pglast8.7 ASTのDDL guardを実装。空replay DBへ適用/再適用、実drift列の検出/自動修復なし、実app接続SQL21拒否を成功。開発DBへ適用後のhost Swift25tests、Python26testsとOpenAPI4examplesも成功した。独立Review/Securityの未解決blocking指摘なし。
+
+新しいcredentialは生成せず、承認済みlocal DB passwordをprivate一時configで利用した。app roleはDDL/owner/admin membership権限なし。複合FKによる越境参照拒否と、まだ未実装の施設別閲覧/操作認可を区別する。GitHub CIには未接続であり、Issue8/9全体は完了扱いにしていない。
