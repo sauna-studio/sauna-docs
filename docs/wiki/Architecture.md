@@ -15,3 +15,4 @@ ADRを変更したPRではこの索引とsauna-docsへの導線も更新する�
 - [ADR-0011 Dependabotはブロッカーにしない](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0011-dependabot-nonblocking.md)
 - [ADR-0012 ローカルPasskey登録・署名検証・セッション（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0012-local-passkey-authentication.md)
 - [ADR-0013 上流WebAuthn PR128とswift-cbor（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0013-webauthn-pr128-and-cbor.md)
+- [ADR-0014 再認証付きPasskey管理と回復の境界（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0014-passkey-management-and-recovery-boundary.md)
