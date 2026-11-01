@@ -4,7 +4,7 @@ Status: Accepted for contribution policy / 2026-11-01
 
 ## Context
 
-ユーザーが4本の記事をSwiftUI作業時の規則・tipsとして指定した。記事には2023年の実装例と過去SDKでの測定も含まれる。対象OS27.2以上、現在のcompiler policy、Appleの契約と整合する判断基準として扱い、古い例のコードや推測を無条件に取り込まない。
+ユーザーが5本の記事をSwiftUI作業時の規則・tipsとして指定した。記事には2023年の実装例と過去SDKでの測定も含まれる。対象OS27.2以上、現在のcompiler policy、Appleの契約と整合する判断基準として扱い、古い例のコードや推測を無条件に取り込まない。
 
 ## Decision
 
@@ -12,7 +12,7 @@ Status: Accepted for contribution policy / 2026-11-01
 
 正本をmainへマージ後、両iOS AGENTSへ本文を完全copyし、適用元main commitと内容hashを明示する。リンクだけの継承とは扱わない。共通Issueは正本PRだけで閉じず、両追従PRの最新レビュー・CI完了後に閉じる。
 
-4記事は設計意図の参照とし、APIの現在の契約はApple一次資料、実装判断は利用可能なSwiftUI Expert Skillと照合する。プロジェクトのOS・セキュリティ要件をSkillの汎用助言より優先する。具体的な適用判断は正本へ集約し、このADRに別版の規則を複製しない。
+5記事は設計意図の参照とし、APIの現在の契約はApple一次資料、実装判断は利用可能なSwiftUI Expert Skillと照合する。プロジェクトのOS・セキュリティ要件をSkillの汎用助言より優先する。具体的な適用判断は正本へ集約し、このADRに別版の規則を複製しない。
 
 ## Verification and limits
 
@@ -28,5 +28,6 @@ Status: Accepted for contribution policy / 2026-11-01
 - [ユーザー記事: Identity](https://zenn.dev/zunda_pixel/articles/ea826f888d05ed)
 - [ユーザー記事: Observation](https://zenn.dev/zunda_pixel/articles/9ce01609d0d234)
 - [ユーザー記事: Navigation](https://zenn.dev/zunda_pixel/articles/ebf2a079cbf68b)
+- [ユーザー記事: Semantic actions](https://zenn.dev/zunda_pixel/articles/7ed1e0d8456e7c)
 - [正本PR18](https://github.com/sauna-studio/.github/pull/18)
 - [Apple build policy](0018-apple-dependencies-and-build-policy.md)
