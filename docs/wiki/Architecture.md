@@ -24,3 +24,4 @@ ADRを変更したPRではこの索引とsauna-docsへの導線も更新する�
 - [ADR-0020 Actions workflow lockfiles](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0020-actions-workflow-lockfiles.md)
 - [ADR-0021 ローカル施設HTTPの認証・認可境界（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0021-local-facility-http-boundary.md)
 - [ADR-0022 既存DBから分離したAtlas migration CI（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0022-isolated-migration-ci.md)
+- [ADR-0023 公開商品カタログと利用条件（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0023-product-catalog-conditions.md)
