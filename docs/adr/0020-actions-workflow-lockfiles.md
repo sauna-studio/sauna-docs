@@ -14,6 +14,10 @@ Status: Accepted for rollout / 2026-11-01
 
 共通Reusable Workflowの定義を先にlock導入してmainへmergeする。その後callerの`jobs.<id>.uses`をlock導入済みdefault-branch履歴commitのfullSHAへ更新する。job単位のReusable呼出自体はlockfile対象外で、その内部Actionは定義元commitのlockfileが担当する。caller側だけのlockfileでは旧source commitの依存は固定されない。
 
+## Dependabot update cadence
+
+追加のユーザー指定により、9repoの既存updates entryへ`cooldown.default-days: 7`を設定する。[Issue22](https://github.com/sauna-studio/.github/issues/22)で追跡し、既存schedule/ignore/PR上限等は保持する。これはversion release後の待機期間であり、weekly scheduleとは別の制御である。security updatesはcooldownの対象外で、セキュリティ修正を遅延させる設定ではない。新repo生成templateも同じdefaultを使用する。
+
 ## Verification and limits
 
 生成の冪等性、既存Action commit/permissionsの保持、全Workflowのcoverage/provenanceを実測する。隔離fixtureで欠落entryと改変commitの拒否を確認し、元repo lockfileを変更しない。各PRは独立Review/Tool Security Review、最新Codex明示再レビューと必須CI成功後にmergeする。
