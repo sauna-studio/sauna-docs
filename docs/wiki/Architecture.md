@@ -19,3 +19,4 @@ ADRを変更したPRではこの索引とsauna-docsへの導線も更新する�
 - [ADR-0015 Appleセッション保存契約（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0015-apple-session-storage-contract.md)
 - [ADR-0016 匿名accountの全Passkey喪失と否定境界](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0016-account-recovery-threat-model.md)
 - [ADR-0017 AppleセッションのAPI再検証と送信先固定（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0017-apple-session-api-client.md)
+- [ADR-0018 Apple依存catalog・compiler policy・JSON設定](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0018-apple-dependencies-and-build-policy.md)
