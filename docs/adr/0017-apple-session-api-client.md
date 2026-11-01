@@ -32,7 +32,7 @@ logoutは同一leaseのtokenとCSRFを使い、正しい204とprofile別削除co
 
 保存tokenだけで認証済みにする方式は失効確認を欠く。任意URLへ認証headerを付けるmiddlewareは送信先境界が広すぎる。共有cookiejarを有効にする方式も保存・消去範囲を制御しにくいため採用しない。
 
-生成器のcookie搬送制約に対する明示adapterは[API Issue51](https://github.com/sauna-studio/sauna-api/issues/51)で追跡し、上流対応後に独立最小fixtureで再評価する。origin/operation/profile照合やredirect拒否は恒久的な安全境界であり、生成器更新だけで削除しない。
+生成器のcookie搬送制約に対する明示adapterは[API Issue51](https://github.com/sauna-studio/sauna-api/issues/51)で追跡し、上流対応後に独立最小fixtureで再評価する。現在の生成header encoderはOriginをURI形式へescapeするため、adapterではprofileに対応する固定literalまたはその既知の生成値だけを完全一致で認め、wire上は固定literalへ正規化する。任意値のURL decodeや生成コードの手編集は行わない。このOrigin補正も同Issueで削除条件と回帰検証を追跡する。origin/operation/profile照合やredirect拒否は恒久的な安全境界であり、生成器更新だけで削除しない。
 
 ## References
 
