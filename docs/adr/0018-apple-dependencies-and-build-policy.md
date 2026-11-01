@@ -42,7 +42,7 @@ Status: Accepted for local build configuration / 2026-11-01
 
 strict検査で検出された保存payloadのunsafe bytes使用は、同じ49byte/version/時刻/32byte token形式を保つbig-endian shiftに置換し、旧形式のgolden dataとの互換をテストする。POSIX pointerを用いたloopback fixtureはNetwork.frameworkへ移し、loopback限定・受信上限・timeout・取消の境界を維持する。無根拠なunsafe/@uncheckedによる抑制は追加しない。
 
-iOSの`SecItemCopyMatching`だけはApple C APIの同期out parameterを必要とする。初期化したlocal `CFTypeRef?`へのpointerが呼出し期間を越えてescapeしないことを根拠に、当該call expressionだけを`unsafe`として明示する。scope/attributes/status/所有権とCAS検証を変更せず、function全体や外部依存へのunsafe設定・警告抑制へ拡大しない。これはC interop境界の明示であり、依存不具合の暫定回避ではない。実SecItem検証は専用Simulatorだけで行う。
+iOSの`SecItemCopyMatching`だけはApple C APIの同期out parameterを必要とする。初期化したlocal `CFTypeRef?`へのpointerが呼出し期間を越えてescapeしないことを根拠に、製品コードの1呼出しと同APIを直接検証するSimulator専用の2呼出しに限って、call expressionを`unsafe`として明示する。scope/attributes/status/所有権とCAS検証を変更せず、function全体や外部依存へのunsafe設定・警告抑制へ拡大しない。これはC interop境界の明示であり、依存不具合の暫定回避ではない。実SecItem検証は専用Simulatorだけで行う。
 
 ## Security and runtime boundary
 
