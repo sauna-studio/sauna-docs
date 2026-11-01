@@ -16,3 +16,5 @@ ADRを変更したPRではこの索引とsauna-docsへの導線も更新する�
 - [ADR-0012 ローカルPasskey登録・署名検証・セッション（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0012-local-passkey-authentication.md)
 - [ADR-0013 上流WebAuthn PR128とswift-cbor（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0013-webauthn-pr128-and-cbor.md)
 - [ADR-0014 再認証付きPasskey管理と回復の境界（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0014-passkey-management-and-recovery-boundary.md)
+- [ADR-0015 Appleセッション保存契約（提案）](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0015-apple-session-storage-contract.md)
+- [ADR-0016 匿名accountの全Passkey喪失と否定境界](https://github.com/sauna-studio/sauna-docs/blob/main/docs/adr/0016-account-recovery-threat-model.md)
