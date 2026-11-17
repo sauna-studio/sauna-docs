@@ -6,7 +6,7 @@ Status: Accepted / 2026-11-01
 川沿いの小規模サウナ1施設から開始し複数施設に拡張する。貸切・共用サウナ、日帰り・宿泊テント、複数商品の同時予約、決済、チャット、設備・在庫・シフトを扱う。
 
 ## Decision
-Swift 6 / Hummingbird API と PostgreSQL 18を正本とし、PostgresNIOで接続、schema.sqlを正本としAtlasのforward-only migrationsでスキーマを管理する。OpenAPIを契約としてSwift OpenAPI Generatorで生成し、SwiftUI (iOS/iPadOS 27.2以上) と SvelteKit/TypeScript の利用者・管理者クライアントを分離する。Google Cloud Run / Cloud SQLを予定するが本番デプロイや課金リソース作成は承認後とする。
+Swift 6 / Hummingbird API と PostgreSQL 18を正本とし、PostgresNIOで接続、schema.sqlを正本としAtlasのforward-only migrationsでスキーマを管理する。OpenAPIを契約としてSwift OpenAPI Generatorで生成し、SwiftUI (iOS/iPadOS 27.2以上) と SvelteKit/TypeScript の利用者・管理者クライアントを分離する。Google Cloud Run / Cloud SQLを予定する。課金リソース作成は明示承認後とする。本番デプロイ自体は都度承認を求めず、既存の認証・権限設定とCI・レビュー条件を維持する。
 
 施設境界には全業務エンティティのfacility_idと施設所属権限を用いる。クライアントの施設IDを信用せずAPIで認可する。共有ユーザーidentityと施設ごとのmembershipを分離し、施設を跨ぐ読み書きの否定テストを必須とする。
 
@@ -22,3 +22,5 @@ API以外から業務DBを直接更新しない。Chat/Calendarは通知や投�
 - https://github.com/hummingbird-project/hummingbird
 - https://github.com/vapor/postgres-nio
 - https://atlasgo.io/docs
+
+2026-11-17追記: 本番デプロイの都度承認に関する当初の決定は、sauna-studio/.github#40の共通方針で更新した。課金・権限拡大に関する承認条件は維持する。

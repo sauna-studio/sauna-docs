@@ -252,7 +252,7 @@
       "body": "Swift、SvelteKit、Terraform、OpenAPI の checks と Releases・Environments 運用を定義する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。\n\n計画ID: G08\n対応精度: 追加GitHub基盤Gxxの具体化。元個別題名の一致は未確認。",
       "acceptance": [
         "再利用 workflow を immutable SHA で呼び出し、必要最小限の権限で実行する。",
-        "実装のある repo は build/test を実行し、本番 deploy と有料リソース作成は別途明示承認を必要とする。"
+        "実装のある repo は build/test を実行する。本番 deploy 自体は都度承認を求めず、有料リソース作成は別途明示承認を必要とする。既存の認証・権限設定とCI・レビュー条件は維持する。"
       ],
       "dependencies": [
         "FOUND-002"
@@ -1384,7 +1384,7 @@
       "body": "全機能・運用・セキュリティの実検証結果を揃え、残課題を可視化する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。 認証・決済・予約競合・個人情報・施設権限に関わるため Security Review Agent も並行起動する。\n\n計画ID: Q05\n対応精度: 計画グループの意図に基づく暫定対応。元Issueの題名・本文との一対一一致は未確認。",
       "acceptance": [
         "利用者とスタッフの end-to-end シナリオ、CI、独立 review と security review の証跡を保存する。",
-        "MVP 50 件の完了・未完了と blocker を明記し、未承認の本番 deploy や課金を行わず release notes を作成する。",
+        "MVP 50 件の完了・未完了と blocker を明記し、未承認の課金を行わず release notes を作成する。本番 deploy 自体は都度承認を求めず、既存の認証・権限設定とCI・レビュー条件を維持する。",
         "MVP50件・GitHub基盤G8件・Chat/MCP T15件・Workspace W14件の全87計画IDについて、親Epicを除く全前提の完了と実検証証跡を依存グラフで追跡する。"
       ],
       "dependencies": [
@@ -1671,7 +1671,7 @@
       "body": "別プロセスのbuild/testとread-only契約をCI化し、運用/停止/鍵失効手順を文書化する。\n\nエージェント・検証条件: 実装時は Coding Agent と独立した Review Agent を必ず並行起動し、実ビルド・テストを実行する。認証・決済・予約競合・個人情報・施設権限・Workspace所属・webhookの変更では Security Review Agent も起動する。MCP契約変更では独立 Tool Review Agent も使用する。\n\n計画ID: T15\n対応精度: 引継ぎ資料のT/Wグループ要件から具体化。元個別Issue原文との一致は未確認。",
       "acceptance": [
         "Swift build/testとtool契約・否定テストがCIで成功し、非本番動作検証の有無を区別する。",
-        "デプロイや有料リソース作成は承認済み範囲に限定し、未設定の認証/環境を未検証と明記する。"
+        "有料リソース作成は承認済み範囲に限定する。本番デプロイ自体は都度承認を求めず、既存の認証・権限設定とCI・レビュー条件を維持し、未設定の認証/環境を未検証と明記する。"
       ],
       "dependencies": [
         "INTEGRATION-018",
